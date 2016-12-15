@@ -2,8 +2,12 @@ import numpy
 
 def get_fp_fn_rate(spike_trains, target, jitter):
     '''Return the false positive and false negative rates for a given
-    spike train target compared to a list of spike trains. All matches
-    are established up to a certain jitter, expressedd in time steps.'''
+    spike train (target) compared to a list of spike trains. All matches
+    are established up to a certain jitter, expressed in time steps.
+	
+	The function returns a list of tuples (false positive rate, false negative rate) 
+	for every input spike trains
+    '''
 
     results = []
 
